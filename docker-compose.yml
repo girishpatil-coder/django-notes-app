@@ -25,6 +25,14 @@
 #       - ".env"
 #     depends_on:
 #       - db
+version : "3.3"
+services :
+  web :
+    image : "girishpatil03/notes-app:latest"
+    port :
+      -"8080:8080"
+
+
 #     restart: always
 #     healthcheck:
 #       test: ["CMD-SHELL", "curl -f http://localhost:8000/admin || exit 1"]
@@ -54,10 +62,3 @@
 
 # networks:
 #   notes-app-nw:
-version : "3.3"
-services :
-  web :
-    image : "girishpatil03/notes-app:latest"
-    port :
-      -"8080:8080"
-
