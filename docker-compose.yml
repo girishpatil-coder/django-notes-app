@@ -1,3 +1,10 @@
+version : "3.3"
+services :
+  web :
+    image : "girishpatil03/notes-app:latest"
+    port :
+      -"8080:8080"
+
 # version: "3.8"
 
 # services:
@@ -25,13 +32,6 @@
 #       - ".env"
 #     depends_on:
 #       - db
-version : "3.3"
-services :
-  web :
-    image : "girishpatil03/notes-app:latest"
-    port :
-      -"8080:8080"
-
 
 #     restart: always
 #     healthcheck:
